@@ -10,14 +10,91 @@
         <h1>Formulário</h1>
         <hr><br>
         <form>
+            <!-- vamos deicar em branco pois não vamos mexer agora mas tem que ficar assim: 
+                <form action="" method="">
+                colocar action é  uma forma de enviar o formulario, se a gente não coloca ele so atualiza a pagina
+                o method usa um http para utilizar o metodo get nao vai ver agora, depois vemos, methodo post e tals 
+            -->
+
+           
             <div>
+                <!-- vai colocando dentro de varias divs se não o formulario vai alinhando horizontalmente e não verticalmente  
+                -->
                 <label for="texto">Nome:</label>
-                <input type="text" name="" id="" placeholder="ex: Maria dos Santos">
-
-                <label for="texto">Quem é a melhor professora?</label>
-                <input type="text" name="" id="" value="Larissa Ribeiro">
-
+                <input type="text" name="nome" id="" placeholder="ex: Maria dos Santos">
+                <!-- deixar escrito como seria o modelo, para substituir é so clicar em cima e ele sobre escreve 
+                -->
             </div>
+
+            <div>
+                <label for="texto">Quem é a melhor professora?</label>
+                <input type="text" name="professor" id="professor" value="Larissa Ribeiro">
+                <!-- o value ja deixa um valor la dentro pré preenchido, para substituir precisa apagar e escrever de novo 
+                -->
+            </div>
+
+            <div>
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" id="senha">
+            </div>
+
+            <div>
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email">
+            </div>
+
+            <div>
+                <label for="data">Data</label>
+                <input type="date" name="data" id="data">
+            </div>
+
+            <div>
+                <label for="hora">Hora</label>
+                <input type="time" name="hora" id="hora">
+            </div>
+
+            <div>
+                <label for="numero">Insira um número:</label>
+                <input type="number" name="numero" id="numero">
+            </div>
+
+            <div>
+                <label for="arquivo">Insira um anexo:</label>
+                <input type="file" name="arquivo" id="arquivo">
+            </div>
+
+            <!-- tipo url fica parecendo um tipo texto mas é importante por conta da semanatica, color podemos escolher a cor dentro do quadrado, range é uma barrinha de rolar onde vc escolhe onde deixa 
+            -->
+
+            <div>
+                <label for="checagem">Marque a opção</label>
+                <input type="checkbox" name="checagem" id="checagem">
+                <!-- o radio funciona parecido mas é uma caixinha que você so pode escolher uma opção, se escolhe um desmarca o outro -->
+            </div>
+
+            <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+            
+            <br>
+            <div>
+                <select name="select" id="select">
+                    <option value="" disabled selected>Selecione uma das opções</option>
+                    <!-- essa opção fica desabilitada porque os usuarios não podem escolher ela, mas ela fica selected pois é a opção inicial -->
+                    <option value="receita">RECEITA</option>
+                    <option value="despesa">DESPESA</option>
+                </select>
+            </div><br>
+
+            <div>
+                <!-- não faz sentido ficar com uma label porque não vamos inserir informações
+                    <label for="reset"></label> 
+                -->
+                <input type="reset" name="reset" id="reset" value="limpar">
+                <!-- o value é o que vai aparecer escrito dentro da caixinha -->
+
+                <input type="submit" name="enviar" id="enviar" value="enviar">
+            </div>
+
+            
         </form>
     </main>
 </body>
