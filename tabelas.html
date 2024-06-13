@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABELAS NO HTML</title>
+</head>
+<body>
+    <main>
+        <h1>Tabelas</h1>
+
+        <section id="students">
+            <h2>Tabela de Aluno</h2>
+
+            <table border="1">
+                <!-- primeira linha sempre cabeçalho usamos a tag thead como boas praticas -->
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>E-mail</th>
+                        <th>Matricula</th>
+                    </tr>
+                </thead>
+                <!-- corpo da tabela  -->
+                <tbody>
+                    <tr>
+                        <td>Larissa Ribeiro</td>
+                        <td>larissa@gmail.com</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Lucas Gonçalves</td>
+                        <td>lucas@gmail.com</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Janete da Silva</td>
+                        <td>janete@gmail.com</td>
+                        <td>3</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+        </section>
+
+        <section id="finance" >
+            <h2>Tabela de Controle Financeiro</h2>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Data da transação</th>
+                        <th>Tipo</th>
+                        <th>Descrição</th>
+                        <th>Valor</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td rowspan="2">01/01/2024</td>
+                        <td>Despesa</td>
+                        <td>Almoço</td>
+                        <td>R$29,30</td>
+                    </tr>
+
+                    <tr>
+                        <!-- apaguei a primeira linha pois no item anterior eu disse que ia mesclar com duas, a anterior e essa -->
+                        <td>Despesa</td>
+                        <td>Cafe da Manhã</td>
+                        <td>R$29,30</td>
+                    </tr>
+
+                    <tr>
+                        <td>01/01/2024</td>
+                        <td>Despesa</td>
+                        <td>Janta</td>
+                        <td>R$29,30</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+        </section>
+    </main>
+</body>
+</html>
